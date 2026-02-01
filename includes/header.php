@@ -92,13 +92,11 @@
                     </a>
                 </li>
 
-                <?php if (hasRole('admin')): ?>
                 <li>
                     <a href="<?php echo APP_URL; ?>/modules/auth/users.php" class="<?php echo strpos($_SERVER['PHP_SELF'], 'users') !== false ? 'active' : ''; ?>">
                         <span>⚙️</span> User Management
                     </a>
                 </li>
-                <?php endif; ?>
             </ul>
         </aside>
 

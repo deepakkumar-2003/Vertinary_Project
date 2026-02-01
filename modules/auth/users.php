@@ -2,12 +2,6 @@
 require_once '../../config/config.php';
 requireLogin();
 
-// Only admin can access user management
-if (getCurrentUserRole() !== 'admin') {
-    setMessage('Access denied. Admin privileges required.', 'error');
-    redirect(APP_URL . '/public/dashboard.php');
-}
-
 $pageTitle = 'User Management';
 
 // Handle delete
